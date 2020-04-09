@@ -1,5 +1,5 @@
 <?php
-class identifiant
+class User
 {
 
     private $_ID_admin;
