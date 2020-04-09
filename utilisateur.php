@@ -3,8 +3,6 @@
 ?>
 <head>
     <link rel="stylesheet" href="css_applis.css">
-    <script type="text/javascript">
-    </script>
 </head>   
 <body>  
         <center>
@@ -19,15 +17,6 @@
     <li style="float:right"><a class="active" href="page_daccueil.php">retour accueil</a></li>
     </ul>  
     <!-- fin du menus -->
-  <!--  
-<form method="POST" action="index_utilisateur.php" >
-Choisissez quelle utilisateur à supprimé ( ne marche pas,et rien dans la BDD )<br>
-<input type="checkbox" name="utilisateur" value="Mathis">Mathis<br>
-<input type="checkbox" name="utilisateur" value="Thomas"> Thomas<br>
-<input type="checkbox" name="utilisateur" value="elodie"> elodie<br>
-<input type="submit" name="exple2" value="Supprimé">
-</form>
--->
 <!-- formulaire d'inscription -->
 <center>
 <form action="utilisateur.php" method="POST">
