@@ -21,7 +21,7 @@
 <input type="submit">
 
 <?php
-    if(empty($_POST['identifiant'])&& empty($_POST['MDP']))
+    if(isset($_POST['identifiant'])&& isset($_POST['MDP']))
     {
 
     }else if($_POST['MDP']==$_POST['MDP2'])
