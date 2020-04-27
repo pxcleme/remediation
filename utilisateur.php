@@ -4,20 +4,7 @@
 <head>
     <link rel="stylesheet" href="css_applis.css">
 </head>   
-<body>  
-        <center>
-            <h1><font color="red"> Utilisateur </font></h1>
-        </center>
-
-<ul>          <!-- debut du menus-->
-
-    <li><a href="page_livre.php">Page des livres </a></li>
-    <li><a href="page_auteur.php">Page des auteurs </a></li>
-    <li><a href="page_commentaire.php">Page des commentaires  </a></li>
-    <li style="float:right"><a class="active" href="page_daccueil.php">retour accueil</a></li>
-    </ul>  
-    <!-- fin du menus -->
-<!-- formulaire d'inscription -->
+<body>      
 <center>
 <form action="utilisateur.php" method="POST">
 <label >Identifiant</label>
@@ -35,15 +22,14 @@ if(empty($_POST['identifiant'])&& empty($_POST['MDP']))
 
 }else if($_POST['MDP']==$_POST['MDP2'])
 {
-$admin = new identifiant();
+$admin = new utilisateur();
 $admin->inscription($_POST['identifiant'] ,$_POST['MDP']);
 echo"Inscription validée";
 }else
 {
-    echo"Erreur";
+    echo"mot_de_passe ou login incorrect";
 }
 ?>
-<!-- fin du formulaire d'inscription -->
 </center>
 </form>
 </body>
