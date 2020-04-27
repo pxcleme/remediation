@@ -12,7 +12,7 @@ public function inscription(){
         //execution du code sur la BDD 
                                     $BDD = new PDO('mysql:host=localhost; dbname=; charset=utf8','root','');
                                     $inscription = $BDD->query('INSERT INTO`inscription`(`ID_inscription`,`Identifiant`,`MDP`)VALUES("'.$Identifiant.'","'.$MDP.'")');
-                                    $inscription = $BDD->query('SELECT `ID_inscription`, `Identifiant`, `MDP` FROM `inscription` WHERE 1');
+                                    $inscription = $BDD->query("SELECT `ID_inscription`, `Identifiant`, `MDP` FROM inscription WHERE Identifiant=$_Identifiant && MDP=$MDP ");
                                 }
                                 catch (Exception $erreur)
                                 {
