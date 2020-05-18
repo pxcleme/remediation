@@ -4,8 +4,10 @@
 <html>
     <head>
         <link rel="stylesheet" href="">
-    </head>   
-    <body>
+        <meta charset="utf-8">
+    </head>
+
+<body>
 <center>
 <form action="utilisateur.php" method="POST">
 <label>Identifiant</label>
